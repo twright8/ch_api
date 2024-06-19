@@ -27,6 +27,7 @@ Create a key.txt file in the project directory and paste your Companies House AP
 Prepare a CSV file named ch.csv with a column named company_number containing the list of company numbers to query.
 
 **Usage**
+
 Ensure you have your key.txt (with an api key) file and ch.csv file in the project directory.
 Run the script:
 
@@ -35,6 +36,7 @@ python main.py
 Or if on windows you can use the exe which is a compiled version of the script. Simply put the ch.csv and key.txt into the same folder and double click if on windows.
 
 **Output**
+
 The script will generate an Excel file named company_data.xlsx in the project directory with the following sheets:
 
 Company Profiles: Contains the company profile details.
@@ -49,6 +51,7 @@ rate_limited_request Function
 Makes API requests with rate limiting and retries on errors. Handles specific status codes like 429 (rate limit exceeded) and server errors (500, 502, 503, 504) with exponential backoff.
 
 **Main Script**
+
 Reads the list of company numbers from ch.csv.
 Reads the API key from key.txt.
 Iterates over each company number and makes API requests to retrieve:
@@ -61,6 +64,7 @@ Example ch.csv
 csv
 
 **company_number**
+
 00000000
 00000001
 00000002
@@ -75,6 +79,6 @@ This project is licensed under the MIT License.
 
 Feel free to submit issues or pull requests if you have any suggestions or improvements.
 
-Acknowledgements
+**Acknowledgements**
 
 This project uses data from the Companies House API.
