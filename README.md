@@ -24,12 +24,14 @@ Create a key.txt file in the project directory and paste your Companies House AP
 Prepare a CSV file named ch.csv with a column named company_number containing the list of company numbers to query.
 
 **Usage**
-Ensure you have your key.txt file and ch.csv file in the project directory.
+Ensure you have your key.txt (with an api key) file and ch.csv file in the project directory.
 Run the script:
-sh
-Copy code
-python script.py
-Output
+
+python main.py
+
+This script has been compiled into an exe by pyinstaller. Simply put the ch.csv and key.txt into the same folder and double click if on windows.
+
+**Output**
 The script will generate an Excel file named company_data.xlsx in the project directory with the following sheets:
 
 Company Profiles: Contains the company profile details.
@@ -55,19 +57,18 @@ Saves the results into an Excel file with appropriate sheets.
 Example ch.csv
 csv
 
-company_number
+**company_number**
 00000000
 00000001
 00000002
 ...
 
-This script has been compiled into an exe by pyinstaller. Simply put the ch.csv and key.txt into the same folder and double click.
 
-License
+**License**
 
 This project is licensed under the MIT License.
 
-Contributing
+**Contributing**
 
 Feel free to submit issues or pull requests if you have any suggestions or improvements.
 
