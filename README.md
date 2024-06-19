@@ -61,11 +61,16 @@ company_number
 00000002
 ...
 
+This script has been compiled into an exe by pyinstaller. Simply put the ch.csv and key.txt into the same folder and double click.
+
 License
+
 This project is licensed under the MIT License.
 
 Contributing
+
 Feel free to submit issues or pull requests if you have any suggestions or improvements.
 
 Acknowledgements
+
 This project uses data from the Companies House API.
