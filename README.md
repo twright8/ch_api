@@ -1,8 +1,11 @@
 **Companies House Data Retrieval Script**
+
 **Overview**
+
 This project provides a Python script to retrieve company profile, persons of significant control, and officers' details from the Companies House API for a list of company numbers provided in a CSV file. The script handles API rate limiting, retries on transient errors, and logs missing or erroneous data.
 
 **Features**
+
 Fetch company profile, persons of significant control, and officers' details from the Companies House API.
 Handles API rate limiting (500 calls per 5 minutes).
 Retries requests on server errors with exponential backoff.
@@ -29,7 +32,7 @@ Run the script:
 
 python main.py
 
-This script has been compiled into an exe by pyinstaller. Simply put the ch.csv and key.txt into the same folder and double click if on windows.
+Or if on windows you can use the exe which is a compiled version of the script. Simply put the ch.csv and key.txt into the same folder and double click if on windows.
 
 **Output**
 The script will generate an Excel file named company_data.xlsx in the project directory with the following sheets:
